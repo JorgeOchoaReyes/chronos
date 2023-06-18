@@ -6,6 +6,8 @@
     "build": "tsc",
     "build:watch": "tsc --watch",
     "mocha": "mocha '**/*.spec.ts'",
+    "emulators": "firebase emulators:start --only functions",
+    "dev": "concurrently \"npm run build:watch\" \"npm run emulators\"",
     "test": "(cd integration-tests && firebase emulators:exec 'npm run mocha' -P demo-test)"
   },
   "main": "lib/index.js",

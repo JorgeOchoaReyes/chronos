@@ -1,3 +1,7 @@
-import {onUpdate} from "./functionTrigger";
+import {onUpdate, onCreate, onWrite} from "./functionTrigger";
 
-exports.onUpdate = onUpdate;
+export {
+  onUpdate,
+  onCreate,
+  onWrite,
+};
